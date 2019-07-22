@@ -1,6 +1,6 @@
 # Provision an EC2 instance in AWS
 
-This Terraform configuration provisions an EC2 instance in AWS.
+This Terraform configuration provisions an EC2 instance in AWS using Terraform 0.12+ syntax.
 
 ## Details
 

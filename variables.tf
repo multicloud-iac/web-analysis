@@ -20,14 +20,10 @@ variable "ami_search_name" {
 
 variable "name" {
   description = "Name tag to assign to instance"
-  default     = "Provisioned by Terraform"
+  default     = "web-analysis"
 }
 
-variable "ttl" {
-  description = "TTL tag to assign to instance"
+variable "tags" {
+  type    = map(string)
+  default = {}
 }
-
-variable "owner" {
-  description = "Ownert tag to assign to instance"
-}
-

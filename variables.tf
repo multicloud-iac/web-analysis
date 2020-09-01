@@ -5,7 +5,6 @@ variable "aws_region" {
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
-  default     = "t2.micro"
 }
 
 variable "ami_owner" {
@@ -20,7 +19,6 @@ variable "ami_search_name" {
 
 variable "name" {
   description = "Name tag to assign to instance"
-  default     = "web-analysis"
 }
 
 variable "tags" {

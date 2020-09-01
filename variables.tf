@@ -1,10 +1,19 @@
-variable "aws_region" {
-  description = "AWS region"
-  default     = "us-west-2"
+variable "name" {
+  description = "Name tag to assign to instance"
+}
+
+variable "tags" {
+  type    = map(string)
+  default = {}
 }
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
+}
+
+variable "aws_region" {
+  description = "AWS region"
+  default     = "us-west-2"
 }
 
 variable "ami_owner" {
@@ -17,11 +26,4 @@ variable "ami_search_name" {
   default     = "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"
 }
 
-variable "name" {
-  description = "Name tag to assign to instance"
-}
 
-variable "tags" {
-  type    = map(string)
-  default = {}
-}
